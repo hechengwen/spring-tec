@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="hcw-tec-web:war">
-    <output-path>$PROJECT_DIR$/hcw-tec-web/target</output-path>
-    <root id="archive" name="hcw-tec.war">
-      <element id="artifact" artifact-name="hcw-tec-web:war exploded" />
-    </root>
-  </artifact>
-</component>
