@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hcw-tec-pojo:war">
+    <output-path>$PROJECT_DIR$/hcw-tec-pojo/target</output-path>
+    <root id="archive" name="hcw-tec.war">
+      <element id="artifact" artifact-name="hcw-tec-pojo:war exploded" />
+    </root>
+  </artifact>
+</component>

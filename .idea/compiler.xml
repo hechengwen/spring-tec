@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hcw-tec-pojo" />
+        <module name="hcw-tec-service" />
+        <module name="hcw-tec-web" />
+        <module name="rabbitmq-consumer" />
+        <module name="rabbitmq-producer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hcw-tec" target="1.5" />
+      <module name="hcw-tec-pojo" target="1.5" />
+      <module name="hcw-tec-service" target="1.6" />
+      <module name="hcw-tec-web" target="1.5" />
+      <module name="hcw-web" target="1.5" />
+      <module name="rabbitmq-consumer" target="1.6" />
+      <module name="rabbitmq-producer" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
