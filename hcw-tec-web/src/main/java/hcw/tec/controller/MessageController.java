@@ -4,6 +4,8 @@ import com.alibaba.fastjson.JSON;
 import hcw.tec.pojo.User;
 import hcw.tec.redis.CacheManagerService;
 import hcw.tec.service.RabbitProducerService;
+import hcw.tec.service.RemoteService;
+import hcw.tec.utils.GetRemoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -42,6 +44,13 @@ public class MessageController {
     @ResponseBody
     public void redis(){
         cacheManagerService.set("123","456");
+    }
+
+    @RequestMapping(value = "/dubbo")
+    @ResponseBody
+    public void dubbo(){
+        RemoteService remoteService = GetRemoteService.getRemoteService(RemoteService.class);
+        remoteService.testDubbo("");
     }
 
 }

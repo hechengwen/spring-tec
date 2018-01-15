@@ -35,6 +35,11 @@
             <artifactId>hcw-tec-pojo</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <dependency>
+            <groupId>hcw-tec</groupId>
+            <artifactId>dubbo-consumer</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
 
 
