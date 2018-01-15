@@ -24,5 +24,6 @@
         <!--定时对线程池中空闲的链接进行validateObject校验-->
         <property name="testWhileIdle" value="true" />
     </bean>
+    
 
 </beans>
