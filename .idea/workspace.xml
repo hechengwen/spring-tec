@@ -9,7 +9,447 @@
     <bookmark url="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/service/impl/RabbitProducerServiceImpl.java" line="28" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4bb3b72-2c31-44f6-8a1f-f0a7032eedf7" name="Default" comment="" />
+    <list default="true" id="d4bb3b72-2c31-44f6-8a1f-f0a7032eedf7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_pojo_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_pojo_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_web_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_tec_web_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_web_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/hcw_web_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/rabbitmq_consumer_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/rabbitmq_consumer_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/rabbitmq_producer_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/rabbitmq_producer_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_access_1_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_31.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_multibindings_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itext_asian_5_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_1_1_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_9_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_30.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_core_2_5_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_all_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_broker_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_camel_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_client_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_jms_pool_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_openwire_legacy_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_activemq_spring_5_15_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_commons_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_core_client_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_jms_client_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_artemis_selector_2_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_kahadb_5_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_core_2_19_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_jms_2_19_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_camel_camel_spring_2_19_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_2_0_spec_1_0_alpha_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_json_1_0_spec_1_0_alpha_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_0_1B_spec_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_core_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_3_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_johnzon_johnzon_core_0_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_ehcache_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xbean_xbean_spring_4_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_fuse_extra_fusemq_leveldb_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_proto_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_scala_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_hawtjni_hawtjni_runtime_1_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_linux32_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_linux64_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_osx_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_iq80_leveldb_leveldb_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_iq80_leveldb_leveldb_api_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jasypt_jasypt_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jgroups_jgroups_3_6_13_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jsp_api_2_1_6_1_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_osgi_org_osgi_core_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_14_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_9_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_7_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_7_5_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_8_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_8_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_8_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_1_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jms_4_3_10_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_13_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_2_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-pojo/hcw-tec-pojo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-pojo/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-pojo/src/main/webapp/WEB-INF/log4j.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-pojo/src/main/webapp/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-pojo/target/classes/hcw/tec/pojo/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/hcw-tec-service.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/auth/MyRealm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/dao/UserMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/redis/CacheManagerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/redis/RedisHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/redis/RedisService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/service/RabbitProducerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/service/impl/BaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/service/impl/RabbitProducerServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-service/target/classes/hcw/tec/utils/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/hcw-tec-web.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/classes/hcw/tec/controller/MessageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/classes/hcw/tec/controller/MessageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-all-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-broker-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-camel-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-client-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-core-5.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-jms-pool-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-openwire-legacy-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-pool-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-protobuf-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/activemq-spring-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/amqp-client-4.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/artemis-commons-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/artemis-core-client-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/artemis-jms-client-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/artemis-selector-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/aspectjweaver-1.8.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/camel-core-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/camel-jms-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/camel-spring-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-beanutils-core-1.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-configuration-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-digester-1.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-lang-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-net-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/core-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/ehcache-core-2.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/fastjson-1.2.31.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/fusemq-leveldb-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/geronimo-jms_2.0_spec-1.0-alpha-2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/geronimo-json_1.0_spec-1.0-alpha-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/guava-19.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/guice-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/guice-multibindings-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hadoop-core-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtbuf-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtbuf-proto-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtdispatch-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtdispatch-scala-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtdispatch-transport-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hawtjni-runtime-1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hcw-tec-pojo-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/hcw-tec-service-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/http-client-1.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/httpclient-4.3.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/httpcore-4.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/httpmime-4.3.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/itext-asian-5.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/itextpdf-5.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jackson-annotations-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jackson-core-2.6.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jackson-databind-2.6.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jasypt-1.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jaxb-core-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jaxb-impl-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jcl-over-slf4j-1.7.22.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jedis-2.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jetty-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jetty-util-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jgroups-3.6.13.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/johnzon-core-0.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jsp-api-2.1-6.1.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/kahadb-5.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldb-0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldb-api-0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldbjni-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldbjni-linux32-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldbjni-linux64-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/leveldbjni-osx-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/logback-access-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/logback-classic-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/logback-core-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/mqtt-client-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/mybatis-3.2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/netty-all-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/org.osgi.core-4.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/rabbitmq-producer-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/scala-library-2.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/shiro-core-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/shiro-ehcache-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/shiro-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/shiro-web-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/snappy-java-1.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-amqp-1.7.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-aop-4.3.13.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-core-4.3.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-data-commons-1.12.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-data-keyvalue-1.1.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-data-redis-1.7.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-jms-4.3.10.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-messaging-4.3.13.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-rabbit-1.7.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-retry-1.2.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec-web/target/hcw-tec/WEB-INF/lib/xbean-spring-4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hcw-tec.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/rabbitmq-consumer.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/classes/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/classes/hcw/rabbit/consumer/RabbitConsumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/classes/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/classes/hcw/rabbit/consumer/RabbitConsumer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-all-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-broker-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-camel-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-client-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-core-5.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-jms-pool-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-openwire-legacy-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-pool-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-protobuf-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/activemq-spring-5.15.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/amqp-client-4.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/aopalliance-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/artemis-commons-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/artemis-core-client-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/artemis-jms-client-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/artemis-selector-2.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/aspectjweaver-1.8.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/camel-core-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/camel-jms-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/camel-spring-2.19.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-beanutils-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-beanutils-core-1.8.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-codec-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-collections-3.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-configuration-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-digester-1.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-io-2.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-lang-2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-lang3-3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-logging-1.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-net-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/commons-pool2-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/core-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/ehcache-core-2.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/fastjson-1.2.31.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/freemarker-2.3.23.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/fusemq-leveldb-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/geronimo-jms_2.0_spec-1.0-alpha-2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/geronimo-json_1.0_spec-1.0-alpha-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/guava-19.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/guice-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/guice-multibindings-3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hadoop-core-1.0.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtbuf-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtbuf-proto-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtdispatch-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtdispatch-scala-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtdispatch-transport-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hawtjni-runtime-1.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hcw-tec-pojo-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/hcw-tec-service-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/http-client-1.1.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/httpclient-4.3.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/httpcore-4.3.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/httpmime-4.3.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/itext-asian-5.2.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/itextpdf-5.5.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jackson-annotations-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jackson-core-2.6.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jackson-databind-2.6.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jasypt-1.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jaxb-core-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jaxb-impl-2.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jedis-2.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jetty-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jetty-util-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jgroups-3.6.13.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/johnzon-core-0.9.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jsp-api-2.1-6.1.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/kahadb-5.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldb-0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldb-api-0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldbjni-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldbjni-linux32-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldbjni-linux64-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/leveldbjni-osx-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/logback-access-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/logback-classic-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/logback-core-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/lombok-1.14.8.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/mqtt-client-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/mybatis-3.2.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/mybatis-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/mysql-connector-java-5.1.30.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/netty-all-4.1.9.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/org.osgi.core-4.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/rabbitmq-producer-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/scala-library-2.9.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/shiro-core-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/shiro-ehcache-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/shiro-spring-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/shiro-web-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/slf4j-api-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/snappy-java-1.0.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-amqp-1.7.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-aop-4.3.13.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-core-4.3.7.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-data-commons-1.12.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-data-keyvalue-1.1.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-data-redis-1.7.8.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-jms-4.3.10.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-messaging-4.3.13.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-rabbit-1.7.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-retry-1.2.1.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-consumer/target/hcw-tec/WEB-INF/lib/xbean-spring-4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-producer/rabbitmq-producer.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitmq-producer/target/classes/hcw/rabbit/producer/RabbitProducer.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/rabbitmq-producer/target/" />
@@ -27,68 +467,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="consumer.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-consumer/src/main/resources/consumer.xml">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/jdbc.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/redis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/resources/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="126" lean-forward="false" selection-start-line="14" selection-start-column="126" selection-end-line="14" selection-end-column="126" />
+              <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RabbitProducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/java/hcw/rabbit/producer/RabbitProducer.java">
+      <file leaf-file-name="server.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/server.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+            <state relative-caret-position="51">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RabbitProducerServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/service/impl/RabbitProducerServiceImpl.java">
+      <file leaf-file-name="shiro.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/shiro/shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RabbitTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/1.7.5.RELEASE/spring-rabbit-1.7.5.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="779" column="0" lean-forward="false" selection-start-line="779" selection-start-column="0" selection-end-line="779" selection-end-column="0" />
-              <folding>
-                <element signature="e#10360#10361#0" expanded="true" />
-                <element signature="e#10431#10432#0" expanded="true" />
-                <element signature="e#28387#28771#0" expanded="true" />
-                <element signature="e#28770#28771#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="producer.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/producer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RabbitConsumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rabbitmq-consumer/src/main/java/hcw/rabbit/consumer/RabbitConsumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="-238">
+              <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -97,8 +530,28 @@
       <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/java/hcw/tec/controller/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="51" />
+            <state relative-caret-position="426">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hcw-tec-web/target/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -119,6 +572,9 @@
     <findStrings>
       <find>active</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -163,8 +619,6 @@
         <option value="$PROJECT_DIR$/rabbitmq-producer/src/main/java/hcw/rabbit/producer/RabbitProducer.java" />
         <option value="$PROJECT_DIR$/rabbitmq-consumer/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/hcw-tec-web/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/RedisHelper.java" />
         <option value="$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/CacheManagerService.java" />
@@ -174,6 +628,10 @@
         <option value="$PROJECT_DIR$/rabbitmq-consumer/src/main/resources/consumer.xml" />
         <option value="$PROJECT_DIR$/rabbitmq-producer/src/main/resources/producer.xml" />
         <option value="$PROJECT_DIR$/hcw-tec-web/src/main/java/hcw/tec/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/hcw-tec-web/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/hcw-tec-web/target/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml" />
       </list>
     </option>
   </component>
@@ -211,6 +669,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -235,101 +694,6 @@
             <path>
               <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
               <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw" type="462c0819:PsiDirectoryNode" />
-              <item name="tec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw" type="462c0819:PsiDirectoryNode" />
-              <item name="tec" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw" type="462c0819:PsiDirectoryNode" />
-              <item name="tec" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw" type="462c0819:PsiDirectoryNode" />
-              <item name="tec" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hcw-tec" type="462c0819:PsiDirectoryNode" />
-              <item name="hcw-tec-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hcw-tec" type="b2602c69:ProjectViewProjectNode" />
@@ -533,7 +897,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -842,12 +1206,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515736204466</updated>
       <workItem from="1515736207440" duration="14322000" />
-      <workItem from="1515979046298" duration="5432000" />
+      <workItem from="1515979046298" duration="8994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19754000" />
+    <option name="totallyTimeSpent" value="23316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -865,17 +1229,17 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21046892" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2439825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12868048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25736097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3894967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25320512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -902,17 +1266,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/java/hcw/tec/controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/webapp/WEB-INF/applicationContext.xml" />
-    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/webapp/WEB-INF/log4j.xml" />
-    <entry file="file://$PROJECT_DIR$/hcw-web/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/hcw-web/pom.xml" />
     <entry file="file://D:/maven-3.3.9/conf/settings.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -926,14 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="91" column="37" lean-forward="true" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-pojo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1031,14 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-pojo/src/main/java/hcw/tec/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hcw-tec-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1062,50 +1399,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/redis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/auth/MyRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-66">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/shiro/shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1126,46 +1423,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/RedisHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/RedisService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/CacheManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="64" column="61" lean-forward="true" selection-start-line="64" selection-start-column="61" selection-end-line="64" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/server.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1273,18 +1534,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/java/hcw/tec/controller/MessageController.java">
+    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/producer.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="51" />
+        <state relative-caret-position="470">
+          <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/producer.xml">
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/CacheManagerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="101" column="23" lean-forward="false" selection-start-line="101" selection-start-column="23" selection-end-line="101" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1975#1976#0" expanded="false" />
+            <element signature="e#2019#2020#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/java/hcw/tec/redis/RedisHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="163" column="26" lean-forward="false" selection-start-line="163" selection-start-column="26" selection-end-line="163" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="72" column="91" lean-forward="false" selection-start-line="72" selection-start-column="91" selection-end-line="72" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-producer/src/main/resources/server.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-pojo/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-pojo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-pojo/src/main/java/hcw/tec/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/java/hcw/tec/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-web/target/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/shiro/shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-service/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hcw-tec-web/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="58" lean-forward="true" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rabbitmq-consumer/rabbitmq-consumer.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
