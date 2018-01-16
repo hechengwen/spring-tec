@@ -38,7 +38,7 @@ public class AnnocationInterceptor implements HandlerInterceptor{
 
             return true;
         }
-        return false;
+        return true;
     }
 
     @Override

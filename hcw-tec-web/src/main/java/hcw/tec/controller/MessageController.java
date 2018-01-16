@@ -2,6 +2,7 @@ package hcw.tec.controller;
 
 import com.alibaba.fastjson.JSON;
 import hcw.tec.annocation.LoginRequired;
+import hcw.tec.globalexception.GlobalException;
 import hcw.tec.pojo.User;
 import hcw.tec.redis.CacheManagerService;
 import hcw.tec.service.RabbitProducerService;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -50,6 +52,8 @@ public class MessageController {
     @LoginRequired
     public void redis(){
         cacheManagerService.set("123","456");
+        logger.error("date:{}",new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS").format(new Date()));
+        logger.info("redis.........");
     }
 
 
@@ -60,4 +64,21 @@ public class MessageController {
         remoteService.testDubbo("");
     }
 
+    @RequestMapping(value = "/exception")
+    @ResponseBody
+    public String exception() throws RuntimeException{
+        throw new RuntimeException();
+    }
+
+    @RequestMapping(value = "/myexception")
+    @ResponseBody
+    public String myexception() throws GlobalException{
+        throw new GlobalException("我是自己定义的异常.....");
+    }
+
+    @RequestMapping(value = "/nullpoint")
+    @ResponseBody
+    public String nullpoint() throws Exception{
+        throw new Exception("我是大异常.....");
+    }
 }
