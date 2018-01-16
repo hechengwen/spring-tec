@@ -1,0 +1,5 @@
+spring整合rabbitmq消息队列
+spring整合dubbo分布式服务
+spring整合redis缓存服务
+shiro权限验证
+全局异常处理

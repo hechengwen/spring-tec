@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd">
+
+    <description>rabbitmq 连接服务配置</description>
+
+    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" host="127.0.0.1" port="5672" virtual-host="/" />
+
+    <rabbit:admin id="connectAdmin" connection-factory="connectionFactory" />
+
+    <rabbit:queue name="com.hcw.tec.test1" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="com.hcw.tec.test2" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="com.hcw.tec.test" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="com.hcw.tec.test000" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+
+    <bean id="messageConsumer" class="hcw.rabbit.consumer.RabbitConsumer" />
+
+    <!--queue litener 观察 监听模式 当有消息到达时会通知监听在对应的队列上的监听对象-->
+    <!--说明： queues：监听的队列，多个的话用逗号（,）分隔   ref：监听器-->
+    <rabbit:listener-container connection-factory="connectionFactory">
+        <rabbit:listener queues="com.hcw.tec.test1,com.hcw.tec.test2,com.hcw.tec.test,com.hcw.tec.test000" ref="messageConsumer"/>
+    </rabbit:listener-container>
+
+</beans>
