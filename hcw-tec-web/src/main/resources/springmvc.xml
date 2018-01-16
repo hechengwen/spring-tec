@@ -11,6 +11,13 @@
         <context:include-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
     </context:component-scan>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**" ></mvc:mapping>
+            <bean class="hcw.tec.interceptor.AnnocationInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">

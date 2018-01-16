@@ -1,5 +1,6 @@
 package hcw.tec.redis;
 
+import hcw.tec.restful.RestData;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -277,7 +278,7 @@ public class CacheManagerService {
      * @param timeLimit 时间限制 秒
      * @return
      */
-    /*public RestData repeatOperationLimit(String key, String oprDesc, int timeLimit) {
+    public RestData repeatOperationLimit(String key, String oprDesc, int timeLimit) {
         if (StringUtils.isBlank(oprDesc)) {
             oprDesc = "";
         }
@@ -306,5 +307,5 @@ public class CacheManagerService {
 
         restData.setSuccess(1);
         return restData;
-    }*/
+    }
 }
