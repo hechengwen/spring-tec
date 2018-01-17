@@ -15,6 +15,7 @@
         <module>dubbo-consumer</module>
         <module>dubbo-api</module>
         <module>hcw-tec-api</module>
+        <module>hcw-tec-task</module>
     </modules>
     <name>hcw-tec Maven Webapp</name>
     <url>http://maven.apache.org</url>
