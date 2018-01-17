@@ -62,6 +62,7 @@ public class MessageController {
     public void dubbo(){
         RemoteService remoteService = GetRemoteService.getRemoteService(RemoteService.class);
         remoteService.testDubbo("");
+        logger.info("");
     }
 
     @RequestMapping(value = "/exception")
