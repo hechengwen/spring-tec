@@ -41,8 +41,9 @@ public class MessageController {
     @RequestMapping(value = "/produceMessage")
     @ResponseBody
     public void produce(User user){
-        rabbitProducerService.producer("exchange1","tec.test", JSON.toJSONString(user));
-        rabbitProducerService.producer("exchange2","tec.test", JSON.toJSONString(user));
+        user.setCreateTime(new Date());
+        rabbitProducerService.producer("exchange1","tec.test", user);
+        rabbitProducerService.producer("exchange2","tec.test", user);
         rabbitProducerService.producer("exchange1","tec.test000", "我很帅！！！");
     }
 
