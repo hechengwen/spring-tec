@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="hcw.tec.dao.UserMapper">
+<mapper namespace="hcw.tecservice.dao.UserMapper">
     <resultMap id="BaseResultMap" type="hcw.tec.pojo.User">
         <id column="user_id" property="userId" jdbcType="VARCHAR"/>
         <result column="username" property="userName" jdbcType="VARCHAR"/>

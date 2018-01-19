@@ -1,13 +1,13 @@
 package hcw.tec.controller;
 
 import com.alibaba.fastjson.JSON;
-import hcw.tec.annocation.LoginRequired;
-import hcw.tec.globalexception.GlobalException;
+import hcw.tecservice.annocation.LoginRequired;
+import hcw.tecservice.globalexception.GlobalException;
 import hcw.tec.pojo.User;
-import hcw.tec.redis.CacheManagerService;
-import hcw.tec.service.RabbitProducerService;
+import hcw.tecservice.redis.CacheManagerService;
+import hcw.rabbit.service.RabbitProducerService;
 import hcw.tec.service.RemoteService;
-import hcw.tec.utils.GetRemoteService;
+import hcw.tecservice.utils.GetRemoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +41,6 @@ public class MessageController {
     @RequestMapping(value = "/produceMessage")
     @ResponseBody
     public void produce(User user){
-        user.setCreateTime(new Date());
         rabbitProducerService.producer("exchange1","tec.test", JSON.toJSONString(user));
         rabbitProducerService.producer("exchange2","tec.test", JSON.toJSONString(user));
         rabbitProducerService.producer("exchange1","tec.test000", "我很帅！！！");
