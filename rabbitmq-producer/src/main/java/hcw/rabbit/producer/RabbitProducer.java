@@ -25,20 +25,20 @@ public class RabbitProducer {
     public void convertAndSend(String routingKey,Object message) throws RuntimeException{
         try {
             amqpTemplate.convertAndSend(routingKey,message);
-            logger.info("rabbitMQ消息发送成功...,routingKey:[{}],message:[{}]",routingKey,message);
+            logger.info("rabbitMQ消息发送成功... - routingKey:[{}],message:[{}]",routingKey,message);
         }catch (AmqpException e) {
             logger.error("rabbitMQ消息发送失败：{}",e.getMessage());
-            throw new RuntimeException("rabbitMQ send failure ...");
+            throw new RuntimeException("rabbitMQ send message failure ...");
         }
     }
 
     public void convertAndSend(String exchange, String routingKey, Object message)throws RuntimeException{
         try {
             amqpTemplate.convertAndSend(exchange,routingKey,message);
-            logger.info("rabbitMQ消息发送成功...,exchange:[{}],routingKey:[{}],message:[{}]",exchange,routingKey,message);
+            logger.info("rabbitMQ消息发送成功... - exchange:[{}],routingKey:[{}],message:[{}]",exchange,routingKey,message);
         }catch (AmqpException e) {
             logger.error("rabbitMQ消息发送失败：{}",e.getMessage());
-            throw new RuntimeException("rabbitMQ send failure ...");
+            throw new RuntimeException("rabbitMQ send message failure ...");
         }
     }
 }
