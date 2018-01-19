@@ -34,7 +34,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="hcw.tec.dao"/>
+        <property name="basePackage" value="hcw.tecservice.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactoryBean"></property>
     </bean>
 
@@ -70,7 +70,7 @@
 
     <!-- 配置AOP切面使用上面提供的切面拦截器(主要用于与数据库交互的层)对所有的SERVICE方法添加事物 -->
     <aop:config>
-        <aop:pointcut id="transactionPointcut" expression="(execution(* hcw.tec.service..impl..*.*(..)))"/>
+        <aop:pointcut id="transactionPointcut" expression="(execution(* hcw.tecservice.service..impl..*.*(..)))"/>
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" order="3"/>
     </aop:config>
 </beans>

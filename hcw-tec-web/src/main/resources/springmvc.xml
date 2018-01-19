@@ -14,7 +14,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**" ></mvc:mapping>
-            <bean class="hcw.tec.interceptor.AnnocationInterceptor"></bean>
+            <bean class="hcw.tecservice.interceptor.AnnocationInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
 

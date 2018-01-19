@@ -7,7 +7,7 @@
     <context:component-scan base-package="hcw.tec.task"/>
 
     <task:annotation-driven scheduler="myScheduler"/>
-    <task:scheduler id="myScheduler" pool-size="20"/>
+    <task:scheduler id="myScheduler" pool-size="10"/>
 
 
 </beans>

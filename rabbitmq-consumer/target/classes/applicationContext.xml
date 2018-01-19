@@ -9,12 +9,13 @@
         <property name="locations">
             <array>
                 <value>classpath:server.properties</value>
+                <value>classpath:spring/jdbc.properties</value>
             </array>
         </property>
     </bean>
 
     <import resource="classpath:consumer.xml" />
-
+    <import resource="classpath:spring/applicationContext.xml"/>
 
 
 </beans>

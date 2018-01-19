@@ -1,6 +1,6 @@
 package hcw.tec.controller;
 
-import hcw.tec.globalexception.GlobalException;
+import hcw.tecservice.globalexception.GlobalException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

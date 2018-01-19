@@ -20,7 +20,7 @@
     </bean>
 
     <!-- realm -->
-    <bean id="myRealm" class="hcw.tec.auth.MyRealm">
+    <bean id="myRealm" class="hcw.tecservice.auth.MyRealm">
         <!-- 将凭证匹配器设置到realm中，realm按照凭证匹配器的要求进行散列 -->
         <!--<property name="credentialsMatcher" ref="credentialsMatcher" />-->
     </bean>
