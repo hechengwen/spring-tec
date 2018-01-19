@@ -34,7 +34,8 @@
         </rabbit:bindings>
     </rabbit:direct-exchange>
 
-    <!--定义rabbit template用于数据的接收和发送 -->
-    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="exchange1" message-converter="jsonMessageConverter"/>
+    <!-- 定义rabbit template用于数据的接收和发送 -->
+    <!-- 确认消息不能路由时(exchange确认不能路由到任何queue),进行确认操作(确认失败).如果发送方设置了mandatory模式,则会先调用basic.return方法. -->
+    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="exchange1" message-converter="jsonMessageConverter" />
 
 </beans>

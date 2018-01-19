@@ -42,9 +42,9 @@ public class MessageController {
     @ResponseBody
     public void produce(User user){
         user.setCreateTime(new Date());
-        rabbitProducerService.producer("exchange1","tec.test", user);
-        rabbitProducerService.producer("exchange2","tec.test", user);
-        rabbitProducerService.producer("exchange1","tec.test000", "我很帅！！！");
+        rabbitProducerService.producer("exchange1","tec.test", "tec.test");
+        rabbitProducerService.producer("exchange2","tec.test123123", "tec.test123123");
+        rabbitProducerService.producer("tec.test111", "tec.test111");
     }
 
     @RequestMapping(value = "/redis")

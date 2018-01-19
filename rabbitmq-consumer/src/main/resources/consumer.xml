@@ -17,8 +17,8 @@
     <bean id="messageConsumer" class="hcw.rabbit.consumer.RabbitConsumer" />
 
     <!--queue litener 观察 监听模式 当有消息到达时会通知监听在对应的队列上的监听对象-->
-    <!--说明： queues：监听的队列，多个的话用逗号（,）分隔   ref：监听器-->
-    <rabbit:listener-container connection-factory="connectionFactory">
+    <!--说明： queues：监听的队列，多个的话用逗号（,）分隔   ref：监听器， acknowledge="manual" 表示需要消费者手动确认收到消息-->
+    <rabbit:listener-container connection-factory="connectionFactory" acknowledge="manual">
         <rabbit:listener queues="com.hcw.tec.test1" ref="messageConsumer"/>
     </rabbit:listener-container>
 
