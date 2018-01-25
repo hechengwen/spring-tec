@@ -11,6 +11,18 @@
 
     <artifactId>hcw-tec-web</artifactId>
     <packaging>war</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -22,6 +34,12 @@
         <dependency>
             <groupId>hcw-tec</groupId>
             <artifactId>hcw-tec-pojo</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>hcw-tec</groupId>
+            <artifactId>hcw-tec-email</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
 

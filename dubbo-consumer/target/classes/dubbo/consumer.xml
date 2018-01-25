@@ -8,6 +8,8 @@
 
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
 
-    <dubbo:reference interface="hcw.tec.service.RemoteService" id="remoteService" />
+    <dubbo:reference interface="hcw.tec.service.RemoteService" id="remoteService" timeout="3000"/>
+
+    <dubbo:consumer timeout="6000" />
 
 </beans>
