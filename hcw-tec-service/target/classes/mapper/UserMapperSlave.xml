@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="hcw.tecservice.dao.master.UserMapper">
+<mapper namespace="hcw.tecservice.dao.slave.UserMapperSlave">
     <resultMap id="BaseResultMap" type="hcw.tec.pojo.User">
         <id column="user_id" property="userId" jdbcType="VARCHAR"/>
         <result column="username" property="userName" jdbcType="VARCHAR"/>
@@ -24,7 +24,7 @@
         <selectKey resultType="java.lang.String" order="BEFORE" keyProperty="userId">
             SELECT UPPER(UUID()) AS userId
         </selectKey>
-        insert into user
+        insert into `user`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="userId != null">
                 user_id,

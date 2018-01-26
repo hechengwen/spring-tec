@@ -8,14 +8,16 @@
     <import resource="classpath*:producer.xml"/>
     <import resource="classpath*:spring/applicationContext.xml"/>
 
+    <!-- 扫描消息队列包 -->
     <context:component-scan base-package="hcw.rabbit"/>
+    <!-- 扫描邮件包 -->
     <context:component-scan base-package="hcw.tec.email"/>
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <array>
                 <value>classpath:server.properties</value>
-                <value>classpath:spring/jdbc.properties</value>
+                <value>classpath:/spring/jdbc.properties</value>
                 <value>classpath:/email/email-config.properties</value>
             </array>
         </property>
