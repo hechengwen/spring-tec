@@ -1,0 +1,5 @@
+hcw\rabbit\listener\ConfirmCallBackListener.class
+hcw\rabbit\listener\ReturnCallBackListener.class
+hcw\rabbit\service\impl\RabbitProducerServiceImpl.class
+hcw\rabbit\service\RabbitProducerService.class
+hcw\rabbit\producer\RabbitProducer.class

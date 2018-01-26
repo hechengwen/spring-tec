@@ -7,6 +7,8 @@
                            http://code.alibabatech.com/schema/dubbo
                            http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
+    <dubbo:provider timeout="6000" />
+
     <!--定义了提供方应用信息，用于计算依赖关系；在 dubbo-admin 或 dubbo-monitor 会显示这个名字，方便辨识-->
     <dubbo:application name="demotest-provider" owner="programmer" organization="dubbox"/>
 
@@ -14,7 +16,7 @@
 
     <dubbo:protocol name="dubbo" port="20880" />
 
-    <dubbo:service interface="hcw.tec.service.RemoteService" ref="remoteService" protocol="dubbo" />
+    <dubbo:service interface="hcw.tec.service.RemoteService" ref="remoteService" protocol="dubbo" timeout="3000"/>
 
     <bean id="remoteService" class="hcw.tec.service.impl.RemoteServiceImpl" />
 

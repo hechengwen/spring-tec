@@ -17,6 +17,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>hcw-tec</groupId>
+            <artifactId>hcw-tec-sign</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>hcw-tec-api</finalName>
