@@ -13,19 +13,59 @@
                            http://www.springframework.org/schema/aop
                            http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:property-placeholder location="classpath:spring/jdbc.properties" ignore-unresolvable="true"/>
+    <!--<context:property-placeholder location="classpath:spring/jdbc.properties" ignore-unresolvable="true"/>-->
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <!-- master数据源 -->
+    <bean id="dataSource_master" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
-        <property name="maxActive" value="10"/>
-        <property name="maxIdle" value="5"/>
+        <property name="url" value="${jdbc.url.master}"/>
+        <property name="username" value="${jdbc.username.master}"/>
+        <property name="password" value="${jdbc.password.master}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${jdbc.initialSize}"/>
+        <!-- 连接池最大数量 -->
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${jdbc.minIdle}"/>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="${jdbc.maxWait}"/>
+    </bean>
+
+    <!-- salve数据源 -->
+    <bean id="dataSource_slave" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url.slave}"/>
+        <property name="username" value="${jdbc.username.slave}"/>
+        <property name="password" value="${jdbc.password.slave}"/>
+        <!-- 初始化连接大小 -->
+        <property name="initialSize" value="${jdbc.initialSize}"/>
+        <!-- 连接池最大数量 -->
+        <property name="maxActive" value="${jdbc.maxActive}"/>
+        <!-- 连接池最大空闲 -->
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
+        <!-- 连接池最小空闲 -->
+        <property name="minIdle" value="${jdbc.minIdle}"/>
+        <!-- 获取连接最大等待时间 -->
+        <property name="maxWait" value="${jdbc.maxWait}"/>
+    </bean>
+
+    <!--  spring动态数据源  -->
+    <bean id="dynamicDataSource" class="hcw.tecservice.datasource.DynamicDataSource">
+        <!-- 默认数据源 -->
+        <property name="defaultTargetDataSource" ref="dataSource_master" />
+        <!-- 通过key-value关联数据源 -->
+        <property name="targetDataSources">
+            <map>
+                <entry key="dataSource_master" value-ref="dataSource_master"></entry>
+                <entry key="dataSource_slave" value-ref="dataSource_slave"></entry>
+            </map>
+        </property>
     </bean>
 
     <bean id="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dynamicDataSource"/>
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
         <!--自动别名配置，比如类名叫DemoPO，那么别名就自动配置为demoPO-->
@@ -41,7 +81,7 @@
 
     <!-- 注解事务 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
+        <property name="dataSource" ref="dynamicDataSource"/>
     </bean>
 
     <!-- 支持事务注解 -->
@@ -74,4 +114,6 @@
         <aop:pointcut id="transactionPointcut" expression="(execution(* hcw.tecservice.service..impl..*.*(..)))"/>
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" order="3"/>
     </aop:config>
+
+    <aop:aspectj-autoproxy/>
 </beans>

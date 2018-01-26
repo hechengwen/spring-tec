@@ -2,6 +2,7 @@ package hcw.tec.controller;
 
 import hcw.tec.email.service.EmailService;
 import hcw.tecservice.annocation.LoginRequired;
+import hcw.tecservice.datasource.DatabaseContextHolder;
 import hcw.tecservice.globalexception.GlobalException;
 import hcw.tec.pojo.User;
 import hcw.tecservice.redis.CacheManagerService;
@@ -112,19 +113,16 @@ public class MessageController {
 
     @RequestMapping("pressure")
     public void pressureTest() {
+        User user = new User();
+        user.setMobile("15497863");
+        user.setUserName("zhangsan");
+        user.setPassword("7987163431");
+        DatabaseContextHolder.setCustomerType("dataSource_master");
+        userService.insert(user);
 
-        new Thread(new Runnable() {
-            User user = new User();
-            @Override
-            public void run() {
-                for (int i = 0; i < 2; i++) {
-                    user.setUserName("hechengwen" + i % 2 + i % 3);
-                    user.setPassword("hechengwen" + i % 2 + i % 3);
-                    user.setMobile("1771036" + i % 2 + i % 3);
-                    userService.insert(user);
-                }
-            }
-        }).start();
-
+        user.setCreateTime(new Date());
+        user.setEmail("hechengwen@jumore.com");
+        DatabaseContextHolder.setCustomerType("dataSource_slave");
+        userService.insertSlave(user);
     }
 }

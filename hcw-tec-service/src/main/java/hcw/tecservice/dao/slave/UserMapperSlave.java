@@ -1,4 +1,4 @@
-package hcw.tecservice.dao;
+package hcw.tecservice.dao.slave;
 
 import hcw.tec.pojo.User;
 import org.apache.ibatis.annotations.Param;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * Others:
  */
 @Repository
-public interface UserMapper {
+public interface UserMapperSlave {
     /**
      * 插入数据
      * @param user
