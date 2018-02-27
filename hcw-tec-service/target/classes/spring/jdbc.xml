@@ -54,7 +54,7 @@
     <!--  spring动态数据源  -->
     <bean id="dynamicDataSource" class="hcw.tecservice.datasource.DynamicDataSource">
         <!-- 默认数据源 -->
-        <property name="defaultTargetDataSource" ref="dataSource_master" />
+        <property name="defaultTargetDataSource" ref="dataSource_master"/>
         <!-- 通过key-value关联数据源 -->
         <property name="targetDataSources">
             <map>
@@ -110,10 +110,30 @@
     </tx:advice>
 
     <!-- 配置AOP切面使用上面提供的切面拦截器(主要用于与数据库交互的层)对所有的SERVICE方法添加事物 -->
-    <aop:config>
+    <!-- proxy-target-class="true" 表示cglib代码，false表示jdk动态代理 -->
+    <aop:config proxy-target-class="true">
         <aop:pointcut id="transactionPointcut" expression="(execution(* hcw.tecservice.service..impl..*.*(..)))"/>
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" order="3"/>
     </aop:config>
+
+    <!--
+        <aop:config>
+            <aop:aspect id="time" ref="timeHandler" order="1">
+                <aop:pointcut id="addTime" expression="execution(* com.xrq.aop.HelloWorld.*(..))" />
+                <aop:before method="printTime" pointcut-ref="addTime" />
+                <aop:after method="printTime" pointcut-ref="addTime" />
+            </aop:aspect>
+            <aop:aspect id="log" ref="logHandler" order="2">
+                <aop:pointcut id="printLog" expression="execution(* com.xrq.aop.HelloWorld.*(..))" />
+                <aop:before method="LogBefore" pointcut-ref="printLog" />
+                <aop:after method="LogAfter" pointcut-ref="printLog" />
+            </aop:aspect>
+        </aop:config>
+
+        要想让logHandler在timeHandler前使用有两个办法：
+            （1）aspect里面有一个order属性，order属性的数字就是横切关注点的顺序
+            （2）把logHandler定义在timeHandler前面，Spring默认以aspect的定义顺序作为织入顺序
+        -->
 
     <aop:aspectj-autoproxy/>
 </beans>

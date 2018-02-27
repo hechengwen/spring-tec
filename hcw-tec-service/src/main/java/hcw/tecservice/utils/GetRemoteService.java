@@ -21,7 +21,7 @@ public class GetRemoteService extends BaseService {
 
     static {
         ClassPathXmlApplicationContext context =
-                new ClassPathXmlApplicationContext("dubbo/consumer.xml");
+                new ClassPathXmlApplicationContext("/dubbo/consumer.xml");
         context.start();
         cacheMap = Collections.synchronizedMap(new HashMap<String, ClassPathXmlApplicationContext>());
         cacheMap.put("context",context);

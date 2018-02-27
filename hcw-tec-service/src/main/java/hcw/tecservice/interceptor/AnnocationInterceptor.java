@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
  * Description:
  * Others:
  */
-public class AnnocationInterceptor implements HandlerInterceptor{
+public class AnnocationInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
 
@@ -31,7 +31,7 @@ public class AnnocationInterceptor implements HandlerInterceptor{
         Method method = handlerMethod.getMethod();
         LoginRequired loginRequired = bean.getClass().getAnnotation(LoginRequired.class); //类上有该标记
         LoginRequired methodAnnotation = method.getAnnotation(LoginRequired.class);// 方法上有该标记
-        if (methodAnnotation != null ){
+        if (methodAnnotation != null) {
             String value = methodAnnotation.value();
 
             // 如果方法上有该注解，则判断session中用户是否登录。。。。

@@ -1,14 +1,11 @@
 package hcw.tecservice.service.impl;
 
-import hcw.tecservice.dao.master.UserMapper;
 import hcw.tec.pojo.User;
+import hcw.tecservice.dao.master.UserMapper;
 import hcw.tecservice.dao.slave.UserMapperSlave;
-import hcw.tecservice.datasource.DatabaseContextHolder;
 import hcw.tecservice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 /**
  * Copyright (C), 2017，jumore Tec.

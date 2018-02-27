@@ -1,7 +1,6 @@
 package hcw.tec.service.impl;
 
 import hcw.tec.service.RemoteService;
-
 /**
  * Copyright (C), 2017，jumore Tec.
  * Author: hechengwen
@@ -10,7 +9,7 @@ import hcw.tec.service.RemoteService;
  * Description:
  * Others:
  */
-public class RemoteServiceImpl implements RemoteService{
+public class RemoteServiceImpl implements RemoteService {
 
     @Override
     public String testDubbo(String str) {

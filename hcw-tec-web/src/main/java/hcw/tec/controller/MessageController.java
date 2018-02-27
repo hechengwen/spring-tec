@@ -1,13 +1,13 @@
 package hcw.tec.controller;
 
+import hcw.rabbit.service.RabbitProducerService;
 import hcw.tec.email.service.EmailService;
+import hcw.tec.pojo.User;
+import hcw.tec.service.RemoteService;
 import hcw.tecservice.annocation.LoginRequired;
 import hcw.tecservice.datasource.DatabaseContextHolder;
 import hcw.tecservice.globalexception.GlobalException;
-import hcw.tec.pojo.User;
 import hcw.tecservice.redis.CacheManagerService;
-import hcw.rabbit.service.RabbitProducerService;
-import hcw.tec.service.RemoteService;
 import hcw.tecservice.service.UserService;
 import hcw.tecservice.utils.GetRemoteService;
 import org.slf4j.Logger;
@@ -17,13 +17,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Copyright (C), 2017，jumore Tec.
