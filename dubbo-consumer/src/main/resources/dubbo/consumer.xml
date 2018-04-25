@@ -6,10 +6,13 @@
     <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
     <dubbo:application name="demotest-consumer" owner="programmer" organization="dubbox"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry id="registry1" address="zookeeper://192.168.184.128:2181" default="false"/>
+    <!--<dubbo:registry id="registry2" address="zookeeper://127.0.0.1:2182"/>-->
+    <dubbo:registry id="registry3" address="zookeeper://127.0.0.1:2183"/>
+    <!--引用服务配置，用于创建一个远程服务代理，一个引用可以指向多个注册中心。-->
+    <dubbo:reference interface="hcw.tec.service.RemoteService" id="remoteService" timeout="10000" version="1.0.0" registry="registry1"/>
+    <dubbo:reference interface="hcw.tec.service.UserService" id="userService" timeout="10000" version="1.0.0" registry="registry3"/>
 
-    <dubbo:reference interface="hcw.tec.service.RemoteService" id="remoteService" timeout="3000"/>
-
-    <dubbo:consumer timeout="6000" />
+    <dubbo:consumer timeout="20000" />
 
 </beans>

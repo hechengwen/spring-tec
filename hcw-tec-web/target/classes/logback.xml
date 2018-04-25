@@ -16,6 +16,9 @@
   <logger name="hcw.tecservice.dao.master.UserMapper" level="DEBUG"/>
 
   <root>
+      <level value="DEBUG" />
+      <level value="INFO" />
+      <level value="INFO" />
       <level value="ERROR" />
       <level value="INFO" />
       <appender-ref ref="STDOUT" />

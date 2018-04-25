@@ -45,7 +45,32 @@ public class RabbitConsumer extends BaseService implements ChannelAwareMessageLi
      */
     @Override
     public void onMessage(Message message, Channel channel) throws Exception {
+        String data = new String(message.getBody());
+
+        // 消费者发生异常，逻辑处理失败，使消息重新回到队列
         try {
+            User user = JSON.parseObject(data, User.class);
+            userService.insert(user);
+            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
+        } catch (Exception e) {
+            if (message.getMessageProperties().getRedelivered()) {
+                logger.error("消息已重复处理失败,拒绝再次接收...");
+                // channel.basicNack 与 channel.basicReject 的区别在于basicNack可以拒绝多条消息，而basicReject一次只能拒绝一条消息
+                channel.basicReject(message.getMessageProperties().getDeliveryTag(),false);
+            } else {
+                logger.error("消息即将再次返回队列处理...");
+                // multiple：是否批量.true:将一次性拒绝所有小于deliveryTag的消息。requeue：被拒绝的是否重新入队列
+                channel.basicNack(message.getMessageProperties().getDeliveryTag(),false,true);
+            }
+        }
+
+
+        logger.info("Consumer:[{}]", data);
+        logger.info("message_propetties:[{}]", message.getMessageProperties());
+
+
+
+        /*try {
             logger.info("Consumer:[{}]", new String(message.getBody()));
             logger.info("message_propetties:[{}]", message.getMessageProperties());
             // deliveryTag是消息传送的次数，我这里是为了让消息队列的第一个消息到达的时候抛出异常，处理异常让消息重新回到队列，然后再次抛出异常，处理异常拒绝让消息重回队列
@@ -67,7 +92,7 @@ public class RabbitConsumer extends BaseService implements ChannelAwareMessageLi
                 // multiple：是否批量.true:将一次性拒绝所有小于deliveryTag的消息。requeue：被拒绝的是否重新入队列
                 channel.basicNack(message.getMessageProperties().getDeliveryTag(),false,true);
             }
-        }
+        }*/
 
     }
 }

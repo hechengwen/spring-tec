@@ -2,22 +2,33 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://code.alibabatech.com/schema/dubbo
-                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <dubbo:provider timeout="6000" />
+    <context:component-scan base-package="hcw.tec.service.impl"/>
+
+    <dubbo:provider timeout="20000" />
 
     <!--定义了提供方应用信息，用于计算依赖关系；在 dubbo-admin 或 dubbo-monitor 会显示这个名字，方便辨识-->
     <dubbo:application name="demotest-provider" owner="programmer" organization="dubbox"/>
 
-    <dubbo:registry address="zookeeper://127.0.0.1:2181" />
+    <dubbo:registry id="registry1" address="zookeeper://192.168.184.128:2181" default="false"/>
+    <!--<dubbo:registry id="registry2" address="zookeeper://127.0.0.1:2182"/>-->
+    <dubbo:registry id="registry3" address="zookeeper://127.0.0.1:2183"/>
 
+    <!--协议配置，用于配置提供服务的协议信息，协议由提供方指定，消费方被动接受。-->
     <dubbo:protocol name="dubbo" port="20880" />
 
-    <dubbo:service interface="hcw.tec.service.RemoteService" ref="remoteService" protocol="dubbo" timeout="3000"/>
+    <!--服务配置，用于暴露一个服务，定义服务的元信息，一个服务可以用多个协议暴露，一个服务也可以注册到多个注册中心。-->
+    <dubbo:service interface="hcw.tec.service.RemoteService" ref="remoteService" protocol="dubbo" timeout="10000" version="1.0.0" registry="registry1"/>
+    <dubbo:service interface="hcw.tec.service.UserService" ref="userService" protocol="dubbo" timeout="10000" version="1.0.0" registry="registry3"/>
 
-    <bean id="remoteService" class="hcw.tec.service.impl.RemoteServiceImpl" />
+    <!--<bean id="remoteService" class="hcw.tec.service.impl.RemoteServiceImpl" />-->
+    <!--<bean id="userService" class="hcw.tec.service.impl.UserServiceImpl" />-->
 
 </beans>
