@@ -6,9 +6,11 @@ import hcw.tec.pojo.User;
 import hcw.tec.service.RemoteService;
 import hcw.tecservice.annocation.LoginRequired;
 import hcw.tecservice.datasource.DatabaseContextHolder;
+import hcw.tecservice.learn.ftp.FTPSync;
 import hcw.tecservice.globalexception.GlobalException;
 import hcw.tecservice.redis.CacheManagerService;
 import hcw.tecservice.service.UserService;
+import hcw.tecservice.learn.ssl.HttpsRequest;
 import hcw.tecservice.utils.GetRemoteService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,8 +19,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.io.InputStreamReader;
-import java.io.Reader;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import java.io.*;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -48,6 +53,35 @@ public class MessageController {
     @Autowired
     private EmailService emailService;
 
+    @Autowired
+    private FTPSync ftpSync;
+
+    @RequestMapping("ftp")
+    public void ftp(){
+        try {
+            ftpSync.uploadDirectory("D:\\logs",null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    @RequestMapping(value = "/sslTest")
+    @ResponseBody
+    public String sslTest(HttpServletRequest request) throws Exception{
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            logger.info("cookie name: [{}] ,cookie value : [{}]",cookie.getName(),cookie.getValue());
+        }
+        String result = HttpsRequest.httpsRequest("https://kyfw.12306.cn/","GET","666");
+
+        String html = HttpsRequest.extractText(result);
+        logger.info("result : {}",result);
+        logger.info("html : {}",html);
+
+        return html;
+    }
+
     @RequestMapping(value = "/email")
     @ResponseBody
     public void email(){
@@ -67,9 +101,13 @@ public class MessageController {
     @ResponseBody
     public void produce(User user) {
         user.setCreateTime(new Date());
-        rabbitProducerService.producer("exchange1", "tec.test", "tec.test");
-        rabbitProducerService.producer("exchange2", "tec.test123123", "tec.test123123");
-        rabbitProducerService.producer("tec.test111", "tec.test111");
+        user.setEmail("hangzhou@qq.com");
+        user.setPassword("123456");
+        user.setUserName("hehe");
+//        user.setMobile("17710363894");
+        rabbitProducerService.producer("exchange3","rabbit.10002", user);
+//        rabbitProducerService.producer("exchange2", "tec.test", "tec.test123123");
+//        rabbitProducerService.producer("tec.test111", "tec.test111");
     }
 
     @RequestMapping(value = "/redis")
@@ -82,12 +120,21 @@ public class MessageController {
     }
 
 
-    @RequestMapping(value = "/dubbo")
+    @RequestMapping(value = "/dubbo",produces = "application/json; charset=utf-8")
     @ResponseBody
-    public void dubbo() {
+    public String dubbo() {
         RemoteService remoteService = GetRemoteService.getRemoteService(RemoteService.class);
-        remoteService.testDubbo("");
-        logger.info("");
+        String result = remoteService.testDubbo("hechengwen");
+        for (Method method : RemoteService.class.getMethods()) {
+            result = method.getName() +" : "+ result;
+        }
+        logger.info(result);
+
+        hcw.tec.service.UserService userService = GetRemoteService.getRemoteService(hcw.tec.service.UserService.class);
+        String result1 = userService.getUser("hechengwen");
+        logger.info("{}",result1);
+        String data = result + result1;
+        return result;
     }
 
     @RequestMapping(value = "/exception")

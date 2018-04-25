@@ -19,23 +19,28 @@ public class GetRemoteService extends BaseService {
 
     private static Map<String, ClassPathXmlApplicationContext> cacheMap = null;
 
-    static {
+
+    public static Map init(){
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("/dubbo/consumer.xml");
         context.start();
         cacheMap = Collections.synchronizedMap(new HashMap<String, ClassPathXmlApplicationContext>());
         cacheMap.put("context",context);
+        return cacheMap;
     }
 
 //    private static Map<String, ClassPathXmlApplicationContext> initMap = null;
 
     public static <T> T getRemoteService(Class<T> cls){
         ClassPathXmlApplicationContext context = null;
-        if (cacheMap != null) {
+        if (cacheMap == null) {
+            cacheMap = init();
+            context = cacheMap.get("context");
+            return context.getBean(cls);
+        } else {
             context = cacheMap.get("context");
             return context.getBean(cls);
         }
-        return null;
     }
 
     /*@Override

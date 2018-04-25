@@ -31,4 +31,10 @@ public class User implements Serializable{
     private String idCard;
     private String sex;
     private Date createTime;
+
+    public User(String userName,String mobile,String email){
+        this.userName = userName;
+        this.mobile = mobile;
+        this.email = email;
+    }
 }

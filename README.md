@@ -2,7 +2,7 @@
 
 2.spring整合dubbo分布式服务
 
-3.spring整合redis缓存服务
+3.spring整合redis缓存单机服务
 
 4.shiro权限验证
 

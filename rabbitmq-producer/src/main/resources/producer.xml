@@ -5,8 +5,15 @@
 
     <description>rabbitmq 连接服务配置</description>
 
-    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" virtual-host="/" host="127.0.0.1" port="5672" />
+    <!-- 消息队列的使用过程大概如下：
+　　（1）客户端连接到消息队列服务器，打开一个channel。
+　　（2）客户端声明一个exchange，并设置相关属性。
+　　（3）客户端声明一个queue，并设置相关属性。
+　　（4）客户端使用routing key，在exchange和queue之间建立好绑定关系。
+　　（5）客户端投递消息到exchange。-->
 
+    <!-- 连接rabbitmq服务器 -->
+    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" virtual-host="/" host="127.0.0.1" port="5672" />
     <rabbit:admin id="connectAdmin" connection-factory="connectionFactory" />
 
     <!-- 消息对象json转换类 -->
@@ -14,28 +21,39 @@
 
     <!--定义queue
     说明： durable:是否持久化    exclusive: 仅创建者可以使用的私有队列，断开后自动删除    auto_delete: 当所有消费客户端连接断开后，是否自动删除队列-->
-    <rabbit:queue name="com.hcw.tec.test1" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
-    <rabbit:queue name="com.hcw.tec.test2" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
-    <rabbit:queue name="com.hcw.tec.test000" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="hcw.rabbit.10000" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="hcw.rabbit.10001" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
+    <rabbit:queue name="hcw.rabbit.10002" durable="true" auto-delete="false" exclusive="false" declared-by="connectAdmin"/>
 
     <!-- 定义direct exchange，绑定com.hcw.tec.test
     说明：  rabbit:direct-exchange：定义exchange模式为direct，意思就是消息与一个特定的路由键完全匹配，才会转发。
            rabbit:binding：设置消息queue匹配的key-->
     <rabbit:direct-exchange name="exchange1" durable="true" auto-delete="false" declared-by="connectAdmin">
         <rabbit:bindings>
-            <rabbit:binding queue="com.hcw.tec.test1" key="tec.test"></rabbit:binding>
-            <rabbit:binding queue="com.hcw.tec.test000" key="tec.test000"></rabbit:binding>
+            <rabbit:binding queue="hcw.rabbit.10000" key="rabbit.10000"></rabbit:binding>
+            <rabbit:binding queue="hcw.rabbit.10001" key="rabbit.10001"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:direct-exchange>
 
-    <rabbit:direct-exchange name="exchange2" durable="true" auto-delete="false" declared-by="connectAdmin">
+    <!-- 如果exchange和queue都是持久化的，那么它们之间的binding也是持久化的。如果exchange和queue两者之间有一个持久化，一个非持久化，就不允许建立绑定。 -->
+    <rabbit:direct-exchange name="exchange3" durable="true" auto-delete="false" declared-by="connectAdmin">
         <rabbit:bindings>
-            <rabbit:binding queue="com.hcw.tec.test2" key="tec.test"></rabbit:binding>
+            <rabbit:binding queue="hcw.rabbit.10002" key="rabbit.10002"></rabbit:binding>
         </rabbit:bindings>
     </rabbit:direct-exchange>
+
+<!--    <rabbit:topic-exchange name="exchange2" durable="true" auto-delete="false" declared-by="connectAdmin">
+        <rabbit:bindings>
+            <rabbit:binding pattern="rabbit.*" queue="hcw.rabbit.10002" />
+        </rabbit:bindings>
+    </rabbit:topic-exchange>-->
+
+    <bean id="confirmCallBackListener" class="hcw.rabbit.listener.ConfirmCallBackListener"/>
+    <bean id="returnCallBackListener" class="hcw.rabbit.listener.ReturnCallBackListener"/>
 
     <!-- 定义rabbit template用于数据的接收和发送 -->
     <!-- 确认消息不能路由时(exchange确认不能路由到任何queue),进行确认操作(确认失败).如果发送方设置了mandatory模式,则会先调用basic.return方法. -->
-    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="exchange1" message-converter="jsonMessageConverter" />
+    <rabbit:template id="amqpTemplate" connection-factory="connectionFactory" exchange="exchange1" message-converter="jsonMessageConverter"
+                     return-callback="returnCallBackListener" confirm-callback="confirmCallBackListener" mandatory="true"/>
 
 </beans>
