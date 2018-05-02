@@ -7,6 +7,8 @@
 
     <import resource="classpath*:producer.xml"/>
     <import resource="classpath*:spring/applicationContext.xml"/>
+    <!-- dubbo消费者配置-->
+    <!--<import resource="classpath*:dubbo/consumer.xml" />-->
 
     <!-- 扫描消息队列包 -->
     <context:component-scan base-package="hcw.rabbit"/>

@@ -50,8 +50,14 @@ public class MessageController {
     @Autowired
     private UserService userService;
 
+//    @Autowired
+//    private hcw.tec.service.UserService userService1;
+
     @Autowired
     private EmailService emailService;
+
+//    @Autowired
+//    private RemoteService remoteService;
 
     @Autowired
     private FTPSync ftpSync;
@@ -114,7 +120,7 @@ public class MessageController {
     @ResponseBody
     @LoginRequired
     public void redis() {
-        cacheManagerService.set("123", "456");
+        cacheManagerService.set("name", "10000");
         logger.error("date:{}", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS").format(new Date()));
         logger.info("redis.........");
     }
