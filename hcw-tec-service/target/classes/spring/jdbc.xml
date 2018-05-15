@@ -68,7 +68,7 @@
         <property name="dataSource" ref="dynamicDataSource"/>
         <!-- 自动扫描mapping.xml文件 -->
         <property name="mapperLocations" value="classpath:mapper/*.xml"/>
-        <!--自动别名配置，比如类名叫DemoPO，那么别名就自动配置为demoPO-->
+        <!-- 自动别名配置，比如类名叫DemoPO，那么别名就自动配置为demoPO -->
         <!--<property name="typeAliasesPackage" value="hcw.tec.pojo"/>-->
         <property name="configLocation" value="classpath:spring/mybatis-config.xml"/>
     </bean>
@@ -135,5 +135,6 @@
             （2）把logHandler定义在timeHandler前面，Spring默认以aspect的定义顺序作为织入顺序
         -->
 
+    <!--支持aop注解-->
     <aop:aspectj-autoproxy/>
 </beans>

@@ -7,7 +7,7 @@
     <dubbo:application name="demotest-consumer" owner="programmer" organization="dubbox"/>
 
     <!--<dubbo:registry id="registry1" address="zookeeper://192.168.184.130:2181" default="false"/>-->
-    <dubbo:registry protocol="zookeeper" address="192.168.184.131:2181,192.168.184.130:2181,192.168.184.129:2181"/>
+    <dubbo:registry protocol="zookeeper" address="192.168.184.131:2181,192.168.184.130:2181,192.168.184.129:2181,192.168.184.128:2181"/>
     <!--<dubbo:registry address="zookeeper://192.168.184.131:2181?backup=192.168.184.130:2181,192.168.184.129:2181"/>-->
     <!--引用服务配置，用于创建一个远程服务代理，一个引用可以指向多个注册中心。-->
     <dubbo:reference interface="hcw.tec.service.RemoteService" id="remoteService" timeout="10000" version="1.0.0" />

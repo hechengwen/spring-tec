@@ -1,6 +1,6 @@
 1.spring整合rabbitmq消息队列 
 
-2.spring整合dubbo分布式服务
+2.spring整合dubbo分布式服务，zookeeper集群部署
 
 3.spring整合redis缓存单机服务
 

@@ -40,6 +40,11 @@ public class StringTest {
         final String s9 = "b"; // 常量
         String s10 = "a" + s9;
         System.out.println("s10==s8 : "+(s10==s8));
+
+        int a = 0;
+        String s11 = "a" + a;
+        String s12 = "a0";
+        System.out.println("s11 == s12 : " + (s11 == s12));
         try {
             readNIO();
         }catch (Exception e) {
