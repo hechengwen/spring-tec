@@ -1,5 +1,8 @@
 package hcw.tecservice.learn.object;
 
+import hcw.tecservice.learn.anno.MethodInfo;
+
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -28,6 +31,10 @@ public class Object extends InvokeClass{
 
     protected void a3(String a){
         System.out.println("a33"+ a);
+    }
+
+    void a4(String a) {
+        System.out.println("a44"+ a);
     }
 
 }

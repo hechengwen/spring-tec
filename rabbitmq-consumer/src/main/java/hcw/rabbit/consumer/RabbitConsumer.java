@@ -51,7 +51,7 @@ public class RabbitConsumer extends BaseService implements ChannelAwareMessageLi
         try {
             User user = JSON.parseObject(data, User.class);
             userService.insert(user);
-            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
+//            channel.basicAck(message.getMessageProperties().getDeliveryTag(),true);
         } catch (Exception e) {
             if (message.getMessageProperties().getRedelivered()) {
                 logger.error("消息已重复处理失败,拒绝再次接收...");

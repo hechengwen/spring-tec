@@ -2,6 +2,8 @@ package hcw.tecservice.service;
 
 import hcw.tec.pojo.User;
 
+import java.util.List;
+
 /**
  * Copyright (C), 2017，jumore Tec.
  * Author: hechengwen
@@ -10,18 +12,20 @@ import hcw.tec.pojo.User;
  * Description:
  * Others:
  */
-public interface UserService {
+public interface UserService extends MasterDataSourceService {
     /**
      * 插入数据
+     *
      * @param user
      * @return
      */
     int insert(User user);
 
-    int insertSlave(User user);
+    int batchInsert(List<User> list);
 
     /**
      * 登录查询
+     *
      * @param username
      * @param password
      * @return

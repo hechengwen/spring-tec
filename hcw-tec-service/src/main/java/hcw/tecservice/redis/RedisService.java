@@ -1,6 +1,7 @@
 package hcw.tecservice.redis;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -12,6 +13,16 @@ import java.util.Set;
  * Others:
  */
 public interface RedisService {
+
+    public void setStr(String key, Object value, Long time);
+
+    void delKey(String key);
+
+    Object getKey(String key);
+
+    List getKeyList(String key,long start,long end);
+
+    Map getKeyMap(String key);
 
     /**
      * 通过key删除（字节）

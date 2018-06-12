@@ -4,6 +4,8 @@ import hcw.tec.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * Copyright (C), 2017，jumore Tec.
  * Author: hechengwen
@@ -20,6 +22,8 @@ public interface UserMapper {
      * @return
      */
     int insert(User user);
+
+    int batchInsert(@Param("list") List<User> list);
 
     /**
      * 登录查询

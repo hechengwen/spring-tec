@@ -19,7 +19,6 @@
       SELECT * FROM user WHERE username=#{username} AND password=#{password}
     </select>
 
-
     <insert id="insert" parameterType="hcw.tec.pojo.User">
         <selectKey resultType="java.lang.String" order="BEFORE" keyProperty="userId">
             SELECT UPPER(UUID()) AS userId

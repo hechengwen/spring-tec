@@ -80,16 +80,16 @@
                 #{email,jdbcType=VARCHAR},
             </if>
             <if test="company != null">
-                #{company,jdbcType=VARCHAR}
+                #{company,jdbcType=VARCHAR},
             </if>
             <if test="address != null">
-                #{address,jdbcType=VARCHAR}
+                #{address,jdbcType=VARCHAR},
             </if>
             <if test="idCard != null">
-                #{idCard,jdbcType=VARCHAR}
+                #{idCard,jdbcType=VARCHAR},
             </if>
             <if test="sex != null">
-                #{sex,jdbcType=INT}
+                #{sex,jdbcType=INT},
             </if>
             <if test="createTime != null">
                 #{createTime,jdbcType=TIMESTAMP}

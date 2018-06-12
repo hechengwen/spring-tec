@@ -62,6 +62,6 @@ public class InvokeClass {
             method.invoke(new Object(),"调用成功");
         }
 
-        Object.class.getMethod("a2",String.class);
+//        Object.class.getMethod("a2",String.class);
     }
 }

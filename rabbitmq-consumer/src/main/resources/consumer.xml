@@ -5,7 +5,7 @@
 
     <description>rabbitmq 连接服务配置</description>
 
-    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" host="127.0.0.1" port="5672" virtual-host="/" />
+    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" host="127.0.0.1" port="5672" virtual-host="dandan" />
 
     <rabbit:admin id="connectAdmin" connection-factory="connectionFactory" />
 

@@ -40,6 +40,36 @@ public class TestStream {
         ps.close();
     }
 
+    //序列化
+    public static byte[] serialize(Object obj) {
+        ObjectOutputStream objectOutputStream = null;
+        ByteArrayOutputStream byteArrayOutputStream = null;
+        try {
+            byteArrayOutputStream = new ByteArrayOutputStream();
+            objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+
+            objectOutputStream.writeObject(obj);
+            return byteArrayOutputStream.toByteArray();
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
+    //反序列化
+    public static Object unserizlize(byte[] byt) {
+        ObjectInputStream objectInputStream = null;
+        ByteArrayInputStream byteArrayInputStream = null;
+        try {
+            byteArrayInputStream = new ByteArrayInputStream(byt);
+            objectInputStream = new ObjectInputStream(byteArrayInputStream);
+            return objectInputStream.readObject();
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
     private static void objectOutput(File file) throws Exception {
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);

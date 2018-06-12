@@ -17,10 +17,12 @@ public class Sort {
         }
         System.out.println("选择排序前：" + java.util.Arrays.toString(array));
         selectSort(array);
+        fora();
     }
 
     /**
      * 选择排序
+     *
      * @param array
      */
     public static void selectSort(int[] array) {
@@ -38,10 +40,24 @@ public class Sort {
     }
 
     /**
-     *
      * @param array
      */
-    public static void insertSort(int[] array){
+    public static void insertSort(int[] array) {
         System.out.println("开始排序");
+    }
+
+
+    public static void fora() {
+        int count = 0;
+        a:for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                if (i == 5) {
+                    break a;
+                }
+                System.out.println("i = " + i + ", j = " + j);
+                count++;
+            }
+        }
+        System.out.println("总次数 = " + count);
     }
 }

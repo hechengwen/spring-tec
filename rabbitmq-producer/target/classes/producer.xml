@@ -13,7 +13,7 @@
 　　（5）客户端投递消息到exchange。-->
 
     <!-- 连接rabbitmq服务器 -->
-    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" virtual-host="/" host="127.0.0.1" port="5672" />
+    <rabbit:connection-factory id="connectionFactory" username="guest" password="123456" virtual-host="dandan" host="127.0.0.1" port="5672" />
     <rabbit:admin id="connectAdmin" connection-factory="connectionFactory" />
 
     <!-- 消息对象json转换类 -->

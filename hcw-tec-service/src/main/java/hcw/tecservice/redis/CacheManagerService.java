@@ -11,6 +11,7 @@ import javax.annotation.PostConstruct;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -36,6 +37,26 @@ public class CacheManagerService {
         stringRedisSerializer=new StringRedisSerializer();
     }
 
+
+    public void setStr(String key, Object value, Long time){
+        redisService.setStr(key,value,time);
+    }
+
+    public void delKey(String key){
+        redisService.delKey(key);
+    }
+
+    public Object getKey(String key){
+        return redisService.getKey(key);
+    }
+
+    public List getKeyList(String key,long start,long end){
+        return redisService.getKeyList(key,start,end);
+    }
+
+    public Map getKeyMap(String key){
+        return redisService.getKeyMap(key);
+    }
 
     /**
      * 通过key删除（字节）

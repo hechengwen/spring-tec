@@ -88,7 +88,7 @@
     <tx:annotation-driven transaction-manager="transactionManager"/>
 
     <!-- AOP配置事物需要拦截需要添加事物的方法 -->
-    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+    <!--<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
         <tx:attributes>
             <tx:method name="get*" read-only="true" propagation="SUPPORTS"/>
             <tx:method name="query*" read-only="true" propagation="SUPPORTS"/>
@@ -109,12 +109,12 @@
         </tx:attributes>
     </tx:advice>
 
-    <!-- 配置AOP切面使用上面提供的切面拦截器(主要用于与数据库交互的层)对所有的SERVICE方法添加事物 -->
-    <!-- proxy-target-class="true" 表示cglib代码，false表示jdk动态代理 -->
+    &lt;!&ndash; 配置AOP切面使用上面提供的切面拦截器(主要用于与数据库交互的层)对所有的SERVICE方法添加事物 &ndash;&gt;
+    &lt;!&ndash; proxy-target-class="true" 表示cglib代码，false表示jdk动态代理 &ndash;&gt;
     <aop:config proxy-target-class="true">
         <aop:pointcut id="transactionPointcut" expression="(execution(* hcw.tecservice.service..impl..*.*(..)))"/>
         <aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" order="3"/>
-    </aop:config>
+    </aop:config>-->
 
     <!--
         <aop:config>
